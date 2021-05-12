@@ -1,19 +1,18 @@
 package com.geektech;
 
 public class Boss extends GameEntity{
+    Weapon weapon;
 
-    public static Weapon weapon = new Weapon("Gun", "AK47");
 
-    public Boss(String name, int health, int damage, Weapon weapon) {
+    public Boss(String name, int health, int damage) {
         super(name, health, damage);
-        this.weapon = weapon;
     }
 
     public Weapon getWeapon() {
         return weapon;
     }
 
-    public void setCar(Weapon car) {
-        this.weapon = car;
+    public void setWeapon(Weapon weapon) {
+        this.weapon = weapon;
     }
 }

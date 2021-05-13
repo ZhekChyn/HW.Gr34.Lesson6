@@ -37,7 +37,7 @@ public class GameEntity {
     }
 
     public String getInfo(){
-        return name + " " + health + " " + damage;
+        return name + " : health = " + health + " | damage = " + damage;
     }
 
 
